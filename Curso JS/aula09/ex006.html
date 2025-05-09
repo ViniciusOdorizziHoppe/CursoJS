@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(10, 97, 68);
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<p id="p1" class="p1">manteiga com abacate</p> <!--0-->
+<p>manteiga com cenoura</p> <!--1-->
+<p>vini é chato</p> <!--2-->
+
+
+    <script>
+      var a = document.getElementsByTagName('p')[2]
+      var b = document.body
+      document.write(a.innerText)
+      a.style.color = 'pink'          
+      b.style.background = 'purple'   
+    </script>
+</body>
+</html>

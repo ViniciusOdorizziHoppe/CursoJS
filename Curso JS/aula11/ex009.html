@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+    <style>
+        body {
+            font: normal 15pt arial;
+        }
+        input {
+            height: 35px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+     <h1>ODIAMOS GRINGOS 😡 </h1>
+
+   Qual é o seu País: <input type="text" id="pais"> <input type="button" onclick="Verificar()" value="Verificar!">
+   
+   <strong><p id="res">Não temos piedade com estrangeiros!</p> </strong>
+
+   <script>
+
+    function Verificar() {
+    var pais = document.getElementById('pais')
+    var res = document.getElementById('res')
+
+    var n1 = String(pais.value)
+
+    if(n1 === 'Brasil') {
+        res.innerHTML += `<p>Você foi abençoado em ser BRASILEIRO<p>`
+    } else{
+        res.innerHTML += `<p>SEU ESTRANGEIRO SAFADO  😡 <p>`
+     }
+}
+   </script>
+
+    
+</body>
+</html>

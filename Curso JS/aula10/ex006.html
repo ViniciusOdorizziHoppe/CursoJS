@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div#area {
+        font: normal 10pt arial;
+        background-color:rgb(0, 0, 0);
+        color: white;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        line-height: 200px;
+        text-align: center;
+        
+       }
+    </style>
+</head>
+<body>
+    <div id="area">
+        PASSE O MOUSE E CLIQUE!
+    </div>
+
+<script>
+
+    var a = window.document.getElementById('area')
+
+    function clicar() {  
+        a.innerText = 'VOCÊ CLICOU :3'
+        a.style.color = 'green'
+
+    }
+    function entrar(){
+        a.style.background = 'white'
+        a.innerText = 'ENTROU!'
+        a.style.color = 'black'
+    }
+    function sair(){
+        a.style.background = 'black'
+        a.innerText = 'SAIU!'
+        a.style.color = 'white'
+    }
+</script>
+</body>
+</html>
